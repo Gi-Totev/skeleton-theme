@@ -1,6 +1,10 @@
 /** Critical CSS for the theme. This file is included on every page. */
 
 /* Reset styles inspired by https://www.joshwcomeau.com/css/custom-css-reset/ */
+:root {
+  font-size: 62.5%;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -47,6 +51,7 @@ dialog {
 p {
   text-wrap: pretty;
 }
+
 p,
 h1,
 h2,
@@ -76,11 +81,8 @@ body {
   font-family: var(--font-primary--family);
   background-color: var(--color-background);
   color: var(--color-foreground);
-  display: flex;
-  flex-direction: column;
 }
 
 main {
   flex-grow: 1;
 }
-
