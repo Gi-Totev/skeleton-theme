@@ -12,6 +12,7 @@
 
 {% stylesheet %}
   .custom-section {
+    padding-inline: var(--page-margin);
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -30,13 +31,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  .custom-section__content {
-    display: grid;
-    grid-template-columns: var(--content-grid);
-  }
-  .custom-section__content > * {
-    grid-column: 2;
   }
 {% endstylesheet %}
 

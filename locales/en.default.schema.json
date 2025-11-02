@@ -23,6 +23,7 @@
     "password": "Password",
     "primary": "Primary",
     "product": "Product",
+    "richtext": "Richtext",
     "row": "Row",
     "search": "Search",
     "secondary": "Secondary",
@@ -45,6 +46,7 @@
     "padding": "Padding",
     "page_margin": "Page margin",
     "page_width": "Page width",
+    "richtext": "Richtext",
     "show_payment_icons": "Show payment icons",
     "text_style": "Text style",
     "text": "Text"

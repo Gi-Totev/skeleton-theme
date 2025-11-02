@@ -1,0 +1,41 @@
+{% doc %}
+  Renders a richtext block.
+
+  @example
+  {% content_for 'block', type: 'richtext', id: 'richtext' %}
+{% enddoc %}
+
+<div
+  class="richtext {{ block.settings.text_style }}"
+  style="--text-align: {{ block.settings.alignment }}"
+  {{ block.shopify_attributes }}
+>
+  {{ block.settings.richtext }}
+</div>
+
+{% stylesheet %}
+  .richtext {
+    text-align: var(--text-align);
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:general.richtext",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "richtext",
+      "label": "t:labels.richtext",
+      "default": "<p>Richext</p>"
+    },
+        {
+      "type": "text_alignment",
+      "id": "alignment",
+      "label": "t:labels.alignment",
+      "default": "left"
+    }
+  ],
+  "presets": [{ "name": "t:general.richtext" }]
+}
+{% endschema %}
